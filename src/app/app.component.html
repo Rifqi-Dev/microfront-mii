@@ -1,1 +1,25 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<nz-layout class="layout">
+  <nz-sider>
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item routerLink="/dashboard">
+        <span class="fe fe-home"></span>
+        <span>Dashboard</span>
+      </li>
+      <li nz-menu-item routerLink="/post">
+        <span class="fe fe-file-text"></span>
+        <span>Post</span>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout class="right-layout">
+    <nz-header>
+      <nz-avatar nzSize="large" nzIcon="user"></nz-avatar>
+    </nz-header>
+    <nz-content>
+      <div class="container"><router-outlet></router-outlet></div>
+    </nz-content>
+    <nz-footer>Rifqi Firlian Pratama</nz-footer>
+  </nz-layout>
+</nz-layout>
+<!-- <router-outlet></router-outlet> -->
