@@ -23,12 +23,19 @@ span {
   margin-left: 200px;
 }
 
+.active {
+  background: #1890ff;
+}
+
 nz-header {
   background: #fff;
   padding: 5px 20px;
   display: flex;
   justify-content: end;
   align-items: center;
+  box-shadow: 1px 1px 12px -3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 12px -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 12px -3px rgba(0, 0, 0, 0.5);
 }
 
 nz-content {
@@ -53,5 +60,10 @@ nz-content {
 }
 
 nz-footer {
+  box-shadow: 1px -1px 12px -3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px -1px 12px -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px -1px 12px -3px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  background: #fff;
   text-align: center;
 }

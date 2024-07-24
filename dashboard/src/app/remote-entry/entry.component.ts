@@ -2,7 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
-
+import { RouterModule } from '@angular/router';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import {
   ChartComponent,
   ApexAxisChartSeries,
@@ -24,7 +25,13 @@ export type ChartOptions = {
 
 @Component({
   standalone: true,
-  imports: [CommonModule, NxWelcomeComponent, NgApexchartsModule],
+  imports: [
+    CommonModule,
+    NxWelcomeComponent,
+    NgApexchartsModule,
+    RouterModule,
+    NzBreadCrumbModule,
+  ],
   templateUrl: './entry.components.html',
   selector: 'app-dashboard-entry',
 })

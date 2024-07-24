@@ -2,11 +2,11 @@
   <nz-sider>
     <div class="logo"></div>
     <ul nz-menu nzTheme="dark" nzMode="inline">
-      <li nz-menu-item routerLink="/dashboard">
+      <li nz-menu-item routerLink="/dashboard" routerLinkActive="active">
         <span class="fe fe-home"></span>
         <span>Dashboard</span>
       </li>
-      <li nz-menu-item routerLink="/post">
+      <li nz-menu-item routerLink="/post" routerLinkActive="active">
         <span class="fe fe-file-text"></span>
         <span>Post</span>
       </li>
@@ -17,9 +17,9 @@
       <nz-avatar nzSize="large" nzIcon="user"></nz-avatar>
     </nz-header>
     <nz-content>
-      <div class="container"><router-outlet></router-outlet></div>
+      <div class="container p-3"><router-outlet></router-outlet></div>
     </nz-content>
-    <nz-footer>Rifqi Firlian Pratama</nz-footer>
+    <nz-footer>&copy; 2024 - Rifqi Firlian Pratama </nz-footer>
   </nz-layout>
 </nz-layout>
 <!-- <router-outlet></router-outlet> -->

@@ -1,8 +1,15 @@
-<apx-chart
-  [series]="chartOptions.series"
-  [chart]="chartOptions.chart"
-  [xaxis]="chartOptions.xaxis"
-  [stroke]="chartOptions.stroke"
-  [tooltip]="chartOptions.tooltip"
-  [dataLabels]="chartOptions.dataLabels"
-></apx-chart>
+<div class="mx-4 mt-4">
+  <nz-breadcrumb>
+    <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+  </nz-breadcrumb>
+</div>
+<div class="py-5">
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [xaxis]="chartOptions.xaxis"
+    [stroke]="chartOptions.stroke"
+    [tooltip]="chartOptions.tooltip"
+    [dataLabels]="chartOptions.dataLabels"
+  ></apx-chart>
+</div>

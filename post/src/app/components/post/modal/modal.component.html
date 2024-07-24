@@ -1,0 +1,47 @@
+<form [formGroup]="postForm" nz-form>
+    <div>
+        <nz-form-label style="font-size: 14px" nzRequired=>User Id</nz-form-label>
+      <nz-form-item > 
+        <nz-form-control nzErrorTip="Please input user id">
+          <input
+            nz-input
+            type="number"
+            placeholder="User Id"
+            formControlName="userId"
+          />
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <div>
+        <nz-form-label style="font-size: 14px" nzRequired=>Title</nz-form-label>
+      <nz-form-item > 
+        <nz-form-control nzErrorTip="Please input title">
+          <input
+            nz-input
+            type="text"
+            placeholder="Title"
+            formControlName="title"
+          />
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <div>
+    <nz-form-label style="font-size: 14px" nzRequired=>Body</nz-form-label>
+      <nz-form-item > 
+        <nz-form-control nzErrorTip="Please input post body">
+          <textarea
+            nz-input
+            type="text"
+            placeholder="Post Body"
+            formControlName="body"
+            rows="4"
+          ></textarea>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <div *nzModalFooter>
+  <button nz-button nzType="default" (click)="closeModal()">Cancel</button>
+  <button nz-button nzType="primary" (click)="submit()" [disabled]="!postForm.valid" [nzLoading]="loading">Submit</button>
+</div>
+
+</form>
